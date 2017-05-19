@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Инструкция по формированию фактических затрат времени</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="./css/sticky-footer.css" rel="stylesheet">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+
+  <!-- Just for debugging purposes. Don't actually copy this line! -->
+  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Yandex.Metrika counter --> <script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter44685325 = new Ya.Metrika({ id:44685325, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/44685325" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+
+</head>
+
+<body>
+
+  <!-- Begin page content -->
+  <div class="container">
+    <div class="page-header">
+      <h1>Заявка на платёж</h1>
+    </div>
+
+    <p>Для планирования расхода/приход денежных средств создается документ <b>«Заявка на операцию»</b>.</p>
+    <p>Для этого в системе <b>«1С:Управление холдингом»</b>, на закладке <b>«Интерфейс пользователя»</b> нужно выбрать пункт <b>«Заявки на платёж»</b>.</p>
+    <p>В открывшемся списке документов нужно нажать на кнопку <b>«Приход»</b> или <b>«Расход»</b></p>
+    <img src="./images/application_1.gif">
+    
+    <p>На форме документа <b>«Заявка на платёж»</b> обязательно нужно заполнить значения следующих полей:</p>
+    <ul>
+      <li><b>Вид операции</b> - заполняется по умолчанию;</li>
+      <li><b>Организация</b>  - заполняется по умолчанию, может быть изменен пользователем;</li>
+      <li><b>Контрагент</b> - контрагент, которому планируется производить оплату;</li>
+      <li><b>Договор контрагента</b> - договор, по которому будет произведена оплата. При отсутствии договора в списке, необходимо его создать;</li>
+      <li><b>Желаемая дата</b> - дата, на которую планируется платеж;</li>
+      <li><b>Сумма</b> - планируемая сумма платежа;</li>
+      <li><b>Период контроля</b> - месяц в котором планируется данный платёж;</li>
+      <li><b>Проект</b> - проект, в рамках которого выполняется платеж. Требудется обязательное заполнение только по проектным статьям;</li>
+      <li><b>ЦФО</b> - организация по которой планируется платёж;</li>
+      <li><b>Основание для платежа</b> - документ на основании которого производится оплата;</li>
+      <li><b>Комментарий</b> - описание планируемого платежа.</li>
+    </ul>
+
+    <p>Внизу, в табличной части, на закладке <b>«Аналитики бюджета»</b> нужно указать статью движения денежных средств. </p>
+    <p>Если планируется платеж по нескольким статьям ДДС  в табличной части <b>«Аналитики бюджета»</b> можно указать несколько статей ДДС,  указав для каждой статьи нужную сумму планируемого платежа.</p>
+
+    <p>Следующие поля документа «Заявка на операцию» заполняются при наличии информации:<p>
+    <ul>
+      <li><b>Счет контрагента</b> - банковские счета</li>
+      <li><b>Назначение платежа</b>
+      <li><b>Вне маршрута</b> - включение это флажка позволит  утвердить и оплатить эту заявку без согласования</li>
+    </ul>
+    
+    <img src="./images/application_2.gif">
+
+    <p>Для согласования заявки на оплату к ней необходимо прикрепить файл с основанием оплаты в различных форматов (Word, Excel, Adobe Acrobat Reader и т.д.). 
+       Для этого необходимо сохранить заявку на оплату, а затем нажать на кнопку <b>"Прикрепить файл"</b> и в открывшемся окне выбрать пункт меню <b>"Добавить - Из файла на диске"</b>.</p>
+
+    <img src="./images/application_3.gif">
+    <p>Так же к заявке на операцию есть возможность добавить комментарий. Для этого необходимо нажать на кнопку <b>"Добавить комментарий"</b> и в открывшемся окне
+       заполнить поле комментария. Так же в этом окне можно прикрепить файл в различных форматах, нажав на соответствующую ссылку:</p>
+    <img src="./images/application_4.gif">
+  </div>
+
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">НПО Прогресс</p>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+
+</body>
+
+</html>
